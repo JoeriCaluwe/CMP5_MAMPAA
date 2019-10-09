@@ -53,8 +53,11 @@ app.set("view engine", "ejs");
 app.use(express.static("public"))
 
 app.get("/", function(request, response) {
-    response.render("home", {
+    response.render("login", {
         boodschap: "online!"
+    });
+app.get('/home', (req, res) => {
+    res.render('home');
     });
 app.get('/leaflet', (req, res) => {
     res.render('leaflet');
@@ -68,20 +71,13 @@ app.get('/detailpark', (req, res) => {
 app.get('/lost', (req, res) => {
     res.render('lost');
     });
-app.get('/weer', (req, res) => {
-    res.render('weer');
-    });
 app.get('/parken', (req, res) => {
     res.render('parken');
-    });
-app.get('/carpool', (req, res) => {
-    res.render('carpool');
     });
 app.get('/profiel', (req, res) => {
     res.render('profiel');
     });
 });
-
 
 app.listen(3000);
 >>>>>>> initial commit;

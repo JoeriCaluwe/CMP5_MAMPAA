@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #mapje {
   width: 100vw;
   height: 100vh;
@@ -12,3 +13,19 @@ a {
   font-size:20pt;
   margin-bottom:20px;
 }
+=======
+#mapje {
+  width: 100vw;
+  height: 100vh;
+}
+
+p {
+  color:red;
+}
+
+a {
+  display:block;
+  font-size:20pt;
+  margin-bottom:20px;
+}
+>>>>>>> all files added
