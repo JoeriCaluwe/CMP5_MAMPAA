@@ -17,6 +17,9 @@ app.get("/", function(request, response) {
 app.get('/home', (req, res) => {
     res.render('home');
     });
+app.get('/register', (req, res) => {
+    res.render('register');
+    });
 app.get('/leaflet', (req, res) => {
     res.render('leaflet');
     });
