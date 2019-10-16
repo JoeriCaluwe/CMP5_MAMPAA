@@ -12,6 +12,7 @@
     "ejs": "^2.7.1",
     "express": "^4.17.1",
     "isotope": "^1.0.0-alpha.3",
-    "leaflet": "^1.5.1"
+    "leaflet": "^1.5.1",
+    "request": "^2.88.0"
   }
 }

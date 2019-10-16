@@ -1,5 +1,10 @@
 var express = require("express");
+//request opstarten
+var request = require('request');
 var path = require("path");
+
+//let toegevoegd
+let data_parken;
 
 var content = require("./data/application.json");
 var port = 3000;
@@ -41,3 +46,21 @@ app.get('/profiel', (req, res) => {
 });
 
 app.listen(3000);
+
+//aanpassing om data parken te krijgen
+app.get('/parken', function(req, res) {
+    res.render('parken', {
+        parken: data_parken
+    });
+    });
+//request aanvragen
+request('https://geodata.antwerpen.be/arcgissql/rest/services/P_Portal/portal_publiek1/MapServer/50/query?where=1%3D1&outFields=*&outSR=4326&f=json',
+  function (error,response,body) {
+    data_parken = JSON.parse(body);
+    data_parken = data_parken.features;
+
+    for(var i=0; i < data_parken.length; i++) {
+      console.log("naam: " + data_parken[i].attributes.naam);
+    }
+  }
+);

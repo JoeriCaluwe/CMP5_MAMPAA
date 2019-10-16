@@ -4,4 +4,9 @@
       <p>Hier kan je de parken filteren</p>
     </div>
 
+<!--  aanpassing om lijst parken te tonen-->
+    <%for(var i=0; i < parken.length; i++) {%>
+      naam; <%=parken[i].attributes.naam%>
+    <%}%>
+
 </body>
