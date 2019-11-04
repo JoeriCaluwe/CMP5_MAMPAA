@@ -7,11 +7,7 @@ var path = require("path");
 let data_parken;
 
 var content = require("./data/application.json");
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 3000;
-}
-app.listen(port);
+var port = 3000;
 var app = express();
 
 app.set("views", path.resolve(__dirname, "views"));
