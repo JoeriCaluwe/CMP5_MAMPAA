@@ -7,7 +7,10 @@ var path = require("path");
 let data_parken;
 
 var content = require("./data/application.json");
-var port = 3000;
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
 var app = express();
 
 app.set("views", path.resolve(__dirname, "views"));
@@ -45,7 +48,7 @@ app.get('/profiel', (req, res) => {
     });
 });
 
-app.listen(3000);
+app.listen(port);
 
 //aanpassing om data parken te krijgen
 app.get('/parken', function(req, res) {
