@@ -1,3 +1,10 @@
+/*-------------------------------body------------------------------*/
+
+body {
+  width:100%;
+  height:100%;
+}
+
 /*-------------------------------Login-----------------------------*/
 
 #login {
@@ -19,4 +26,12 @@ a {
   display:block;
   font-size:20pt;
   margin-bottom:20px;
+}
+
+#lijst {
+  float: right;
+}
+
+#terug {
+  float: left;
 }
