@@ -28,9 +28,9 @@ app.get('/home', (req, res) => {
 app.get('/register', (req, res) => {
     res.render('register');
     });
-app.get('/leaflet', (req, res) => {
+/*app.get('/leaflet', (req, res) => {
     res.render('leaflet');
-    });
+  });*/
 app.get('/chat', (req, res) => {
     res.render('chat');
     });
@@ -51,15 +51,13 @@ app.get('/profiel', (req, res) => {
 app.listen(port);
 
 //aanpassing om data parken te krijgen
-app.get('/parken', function(req, res) {
-    res.render('parken', {
-        parken: data_parken
-    });
-    });
+
 //request aanvragen
+
 request('https://geodata.antwerpen.be/arcgissql/rest/services/P_Portal/portal_publiek1/MapServer/50/query?where=1%3D1&outFields=*&outSR=4326&f=json',
   function (error,response,body) {
     data_parken = JSON.parse(body);
+
     data_parken = data_parken.features;
 
     for(var i=0; i < data_parken.length; i++) {
@@ -67,3 +65,14 @@ request('https://geodata.antwerpen.be/arcgissql/rest/services/P_Portal/portal_pu
     }
   }
 );
+
+app.get('/parken', function(req, res) {
+  res.render('parken', {
+      parken: data_parken
+  });
+});
+app.get('/leaflet', function(req, res) {
+  res.render('leaflet', {
+      parken: data_parken
+  });
+});

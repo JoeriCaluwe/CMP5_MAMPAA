@@ -1,4 +1,18 @@
 <% include header %>
-    <div id="mapje"></div>
+<div id="leafletbalk">
+<a href="/home" id="terug">terug</a>
+<a href="/home" id="lijst">lijst</a>
+</div>
+<div id="mapje"></div>
+
+<script src="./js/leaflet.js"></script>
+<script src="js/script.js"></script>
+<script>
+ <% for(var i=0; i < parken.length; i++) { %>
+        L.marker([<%-parken[i].geometry.y %>, <%-parken[i].geometry.x %>]).addTo(mymap)
+            .bindPopup("<%- parken[i].attributes.naam%>")
+        <% } %>
+</script>
+
 
 <% include footer %>

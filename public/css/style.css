@@ -1,3 +1,6 @@
+/*-------------------------------body------------------------------*/
+
+
 /*-------------------------------Login-----------------------------*/
 
 #login {
@@ -6,10 +9,12 @@
 
 /*-------------------------------Leaflet-----------------------------*/
 
+
 #mapje {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
 }
+
 
 p {
   color:red;
@@ -19,4 +24,16 @@ a {
   display:block;
   font-size:20pt;
   margin-bottom:20px;
+}
+
+#lijst {
+  float: right;
+}
+
+#terug {
+  float: left;
+}
+
+#leafletbalk {
+
 }
