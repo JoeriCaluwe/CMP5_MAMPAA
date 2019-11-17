@@ -18,3 +18,12 @@ basicmap.addTo(mymap);
 
 
 //---------slide menu--------
+
+let mijnHamburger = document.querySelector("#hamburger");
+let mijnNav = document.querySelector("ul#parken");
+mijnHamburger.addEventListener("click", function() {
+	mijnNav.classList.toggle("zichtbaar");
+})
+
+
+//----------isotope---------
