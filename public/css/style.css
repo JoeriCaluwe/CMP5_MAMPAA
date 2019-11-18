@@ -18,6 +18,11 @@ body {
   border-bottom: 5px solid #FFFFFF;
 }
 
+.logo {
+  display: block;
+  margin: auto;
+}
+
 .veld {
   display: block;
   margin: auto;
@@ -44,7 +49,6 @@ p {
 
 .menu{
   display: block;
-  margin-top: 50%;
 }
 
 .hoofdmenu {
@@ -96,8 +100,6 @@ img#hamburger {
       color: black;
       padding-left: 1rem;
       padding-right: 1rem;
-
-
 }
 
 ul {
