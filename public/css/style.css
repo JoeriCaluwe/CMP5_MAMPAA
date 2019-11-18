@@ -23,6 +23,15 @@ body {
   margin: auto;
 }
 
+.logomenu {
+  position: absolute;
+  display: block;
+  margin: auto;
+  width: 80px;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
 .veld {
   display: block;
   margin: auto;
