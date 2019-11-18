@@ -27,11 +27,12 @@ body {
   display: block;
   margin: auto;
   padding: 5px;
+  margin-bottom: 20px;
 }
 
 .mapmenu {
   margin: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 p {
@@ -45,6 +46,11 @@ p {
   font-size: 20pt;
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+.registreer {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .menu{
@@ -69,6 +75,12 @@ button {
   margin: auto;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+.mapmenu2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
