@@ -15,8 +15,19 @@
         <button onclick="myFunction()">All</button>
 
       </li>
-      <li>item</li>
-      <li>item</li>
+      <li> <button onclick="myFunction2()">2000</button> </li>
+      <li> <button onclick="myFunction3()">2050</button> </li>
+      <li> <button onclick="myFunction4()">2100</button> </li>
+      <li> <button onclick="myFunction5()">2140</button> </li>
+      <li> <button onclick="myFunction6()">2170</button> </li>
+      <li> <button onclick="myFunction7()">2180</button> </li>
+      <li> <button onclick="myFunction8()">2600</button> </li>
+      <li> <button onclick="myFunction9()">2610</button> </li>
+      <li> <button onclick="myFunction10()">2660</button> </li>
+      <li> <button onclick="myFunction11()">weinig toestellen</button> </li>
+      <li> <button onclick="myFunction12()">veel toestellen</button> </li>
+
+
       <li>item</li>
       <li>item</li>
       <li>item</li>
@@ -39,6 +50,84 @@
            L.marker([<%-parken[i].geometry.y %>, <%-parken[i].geometry.x %>]).addTo(mymap)
                .bindPopup("<%- parken[i].attributes.naam%>")
            <% } %>
+  }
+
+  function myFunction2(){
+    <% for(var i=0; i < parken.length; i++) { if (parken[i].attributes.postcode == "2000") {%>
+           L.marker([<%-parken[i].geometry.y %>, <%-parken[i].geometry.x %>]).addTo(mymap)
+               .bindPopup("<%- parken[i].attributes.naam%>")
+           <% } %>
+           <% } %>
+}
+  function myFunction3(){
+             <% for(var i=0; i < parken.length; i++) { if (parken[i].attributes.postcode == "2050") {%>
+                    L.marker([<%-parken[i].geometry.y %>, <%-parken[i].geometry.x %>]).addTo(mymap)
+                        .bindPopup("<%- parken[i].attributes.naam%>")
+                    <% } %>
+                    <% } %>
+}
+  function myFunction4(){
+                               <% for(var i=0; i < parken.length; i++) { if (parken[i].attributes.postcode == "2100") {%>
+                                      L.marker([<%-parken[i].geometry.y %>, <%-parken[i].geometry.x %>]).addTo(mymap)
+                                          .bindPopup("<%- parken[i].attributes.naam%>")
+                                      <% } %>
+                                      <% } %>
+  }
+  function myFunction5(){
+            <% for(var i=0; i < parken.length; i++) { if (parken[i].attributes.postcode == "2140") {%>
+                    L.marker([<%-parken[i].geometry.y %>, <%-parken[i].geometry.x %>]).addTo(mymap)
+                          .bindPopup("<%- parken[i].attributes.naam%>")
+                  <% } %>
+                  <% } %>
+  }
+  function myFunction6(){
+            <% for(var i=0; i < parken.length; i++) { if (parken[i].attributes.postcode == "2170") {%>
+                    L.marker([<%-parken[i].geometry.y %>, <%-parken[i].geometry.x %>]).addTo(mymap)
+                          .bindPopup("<%- parken[i].attributes.naam%>")
+                  <% } %>
+                  <% } %>
+  }
+  function myFunction7(){
+            <% for(var i=0; i < parken.length; i++) { if (parken[i].attributes.postcode == "2180") {%>
+                    L.marker([<%-parken[i].geometry.y %>, <%-parken[i].geometry.x %>]).addTo(mymap)
+                          .bindPopup("<%- parken[i].attributes.naam%>")
+                  <% } %>
+                  <% } %>
+  }
+  function myFunction8(){
+            <% for(var i=0; i < parken.length; i++) { if (parken[i].attributes.postcode == "2600") {%>
+                    L.marker([<%-parken[i].geometry.y %>, <%-parken[i].geometry.x %>]).addTo(mymap)
+                          .bindPopup("<%- parken[i].attributes.naam%>")
+                  <% } %>
+                  <% } %>
+  }
+  function myFunction9(){
+            <% for(var i=0; i < parken.length; i++) { if (parken[i].attributes.postcode == "2610") {%>
+                    L.marker([<%-parken[i].geometry.y %>, <%-parken[i].geometry.x %>]).addTo(mymap)
+                          .bindPopup("<%- parken[i].attributes.naam%>")
+                  <% } %>
+                  <% } %>
+  }
+  function myFunction10(){
+            <% for(var i=0; i < parken.length; i++) { if (parken[i].attributes.postcode == "2660") {%>
+                    L.marker([<%-parken[i].geometry.y %>, <%-parken[i].geometry.x %>]).addTo(mymap)
+                          .bindPopup("<%- parken[i].attributes.naam%>")
+                  <% } %>
+                  <% } %>
+  }
+  function myFunction11(){
+            <% for(var i=0; i < parken.length; i++) { if (parken[i].attributes.toestellen < 10) {%>
+                    L.marker([<%-parken[i].geometry.y %>, <%-parken[i].geometry.x %>]).addTo(mymap)
+                          .bindPopup("<%- parken[i].attributes.naam%>")
+                  <% } %>
+                  <% } %>
+  }
+  function myFunction12(){
+            <% for(var i=0; i < parken.length; i++) { if (parken[i].attributes.toestellen > 10) {%>
+                    L.marker([<%-parken[i].geometry.y %>, <%-parken[i].geometry.x %>]).addTo(mymap)
+                          .bindPopup("<%- parken[i].attributes.naam%>")
+                  <% } %>
+                  <% } %>
   }
 
 </script>
