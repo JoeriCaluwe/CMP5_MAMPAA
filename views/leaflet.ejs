@@ -6,8 +6,15 @@
     <div id="filter">
       <button id="isotope1" class="button" data-filter=".afstand">afstand</button>
       <button id="isotope2" class="button" data-sort-by="name">naam</button>
+
+
     </div>
-      <li>item</li>
+
+      <li>
+
+        <button onclick="myFunction()">All</button>
+
+      </li>
       <li>item</li>
       <li>item</li>
       <li>item</li>
@@ -16,16 +23,24 @@
       <li>item</li>
       <li>item</li>
   </ul>
+
+  <div class="btn-group">
+
+    </div>
 </div>
 <div id="mapje"></div>
 
 <script src="./js/leaflet.js"></script>
 <script src="js/script.js"></script>
 <script>
- <% for(var i=0; i < parken.length; i++) { %>
-        L.marker([<%-parken[i].geometry.y %>, <%-parken[i].geometry.x %>]).addTo(mymap)
-            .bindPopup("<%- parken[i].attributes.naam%>")
-        <% } %>
+
+  function myFunction(){
+    <% for(var i=0; i < parken.length; i++) { %>
+           L.marker([<%-parken[i].geometry.y %>, <%-parken[i].geometry.x %>]).addTo(mymap)
+               .bindPopup("<%- parken[i].attributes.naam%>")
+           <% } %>
+  }
+
 </script>
 
 
