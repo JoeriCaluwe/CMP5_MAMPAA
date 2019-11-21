@@ -6,8 +6,12 @@
     </div>
 
 <!--  aanpassing om lijst parken te tonen-->
-    <%for(var i=0; i < parken.length; i++) {%>
-      naam; <%=parken[i].attributes.naam%>
-    <%}%>
-
+  <div>
+    <% for(var i=0; i < parken.length; i++) {%>
+      <a href="">
+      <h3><%=parken[i].attributes.naam%></h3>
+      <p><%=parken[i].attributes.straat%></p>
+      </a>
+    <% }%>
+</div>
 </body>
