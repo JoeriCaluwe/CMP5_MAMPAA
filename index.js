@@ -34,17 +34,14 @@ app.get('/register', (req, res) => {
 app.get('/chat', (req, res) => {
     res.render('chat');
     });
-app.get('/detailpark', (req, res) => {
-    res.render('detailpark');
-    });
 app.get('/lost', (req, res) => {
     res.render('lost');
     });
 app.get('/parken', (req, res) => {
     res.render('parken');
     });
-app.get('/profiel', (req, res) => {
-    res.render('profiel');
+app.get('/contact', (req, res) => {
+    res.render('contact');
     });
 });
 
