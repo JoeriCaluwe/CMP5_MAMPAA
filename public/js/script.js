@@ -24,6 +24,3 @@ let mijnNav = document.querySelector("ul#parken");
 mijnHamburger.addEventListener("click", function() {
 	mijnNav.classList.toggle("zichtbaar");
 })
-
-
-//----------isotope---------
