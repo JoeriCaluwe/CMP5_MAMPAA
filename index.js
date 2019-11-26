@@ -43,6 +43,9 @@ app.get('/parken', (req, res) => {
 app.get('/contact', (req, res) => {
     res.render('contact');
     });
+app.get('/detail', (req, res) => {
+    res.render('detail');
+    });
 });
 
 app.listen(port);
@@ -70,6 +73,12 @@ app.get('/parken', function(req, res) {
 });
 app.get('/leaflet', function(req, res) {
   res.render('leaflet', {
+      parken: data_parken
+  });
+});
+
+app.get('/detail', function(req, res) {
+  res.render('detail', {
       parken: data_parken
   });
 });

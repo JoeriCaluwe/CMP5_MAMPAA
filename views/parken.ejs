@@ -1,16 +1,12 @@
 <% include header %>
 
   <a class=mapmenu href="/home" id="terug">Terug</a>
-    <div id="parken">
-      <p>Hier kan je de parken filteren</p>
-    </div>
 
 <!--  aanpassing om lijst parken te tonen-->
   <div>
     <% for(var i=0; i < parken.length; i++) {%>
-      <a href="">
+      <a href="/detail">
       <h3><%=parken[i].attributes.naam%></h3>
-      <p><%=parken[i].attributes.straat%></p>
       </a>
     <% }%>
 </div>
