@@ -1,0 +1,15 @@
+<% include header %>
+
+<a class=mapmenu href="/parken" id="parken">Terug naar alle parken</a>
+
+  <% for(var i=0; i < parken.length; i++) {%>
+    <p><%=parken[i].attributes.straat%></p>
+    <p><%=parken[i].attributes.huisnummer%></p>
+    <p><%=parken[i].attributes.postcode%></p>
+    <p><%=parken[i].attributes.district%></p>
+    <p><%=parken[i].attributes.toestellen%></p>
+    <p><%=parken[i].attributes.foto1%></p>
+    <p><%=parken[i].attributes.opmerking%></p>
+  <% }%>
+
+</body>
