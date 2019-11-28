@@ -16,15 +16,16 @@ var app = express();
 app.set("views", path.resolve(__dirname, "views"));
 app.set("view engine", "ejs");
 
-app.use(express.static("public"))
+app.use(express.static("public"));
 
 app.get("/", function(request, response) {
     response.render("login", {
         boodschap: "online!"
     });
+});
 app.get('/home', (req, res) => {
     res.render('home');
-    });
+});
 app.get('/register', (req, res) => {
     res.render('register');
     });
@@ -37,16 +38,11 @@ app.get('/chat', (req, res) => {
 app.get('/lost', (req, res) => {
     res.render('lost');
     });
-app.get('/parken', (req, res) => {
-    res.render('parken');
-    });
 app.get('/contact', (req, res) => {
     res.render('contact');
     });
-app.get('/detail', (req, res) => {
-    res.render('detail');
-    });
-});
+
+
 
 app.listen(port);
 
@@ -77,8 +73,8 @@ app.get('/leaflet', function(req, res) {
   });
 });
 
-app.get('/detail', function(req, res) {
+app.get('/detail/:id', function(req, res) {
   res.render('detail', {
-      parken: data_parken
+      park: data_parken[req.params.id]
   });
 });

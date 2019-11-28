@@ -2,10 +2,12 @@
 
   <a class=mapmenu href="/home" id="terug">Terug</a>
 
+  <h1>Overzicht parken</h1>
+
 <!--  aanpassing om lijst parken te tonen-->
   <div>
     <% for(var i=0; i < parken.length; i++) {%>
-      <a href="/detail">
+      <a href="/detail/<%=i%>">
       <h3><%=parken[i].attributes.naam%></h3>
       </a>
     <% }%>
