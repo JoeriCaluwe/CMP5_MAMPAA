@@ -1,8 +1,18 @@
 <% include header %>
 <a class=mapmenu href="/home" id="terug">Terug</a>
-    <div id="lost">
-      <p>Dit is de 'I lost my child pagina'</p>
-    </div>
-
+    
+    <head>
+    		<script type="text/javascript">
+    			function showMessage(){
+    				alert("Help, ik vind mijn kind niet! Help je mee zoeken?");
+    			}
+    		</script>
+    	</head>
+    <body>
+    	<center>
+    		<h1>Ben je je kind verloren?</h1>
+    		<b>Klik op de 'lost' knop en geef iedereen een waarschuwing om mee te zoeken!</b><br><br>
+    		<input type="button" id="btnShowMsg" value="Lost!" onClick='showMessage()'/>
+    	</center>
 
 </body>

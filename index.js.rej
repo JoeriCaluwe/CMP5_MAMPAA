@@ -38,22 +38,25 @@ diff a/index.js b/index.js	(rejected hunks)
  +app.get('/profiel', (req, res) => {
  +    res.render('profiel');
  +    });
+ +app.get('/detail', (req, res) => {
+ +    res.render('detail');
+ +    });
  +});
  +
  +app.listen(3000);
 ++=======
 + var express = require("express");
 + var path = require("path");
-+ 
++
 + var content = require("./data/application.json");
 + var port = 3000;
 + var app = express();
-+ 
++
 + app.set("views", path.resolve(__dirname, "views"));
 + app.set("view engine", "ejs");
-+ 
++
 + app.use(express.static("public"))
-+ 
++
 + app.get("/", function(request, response) {
 +     response.render("home", {
 +         boodschap: "online!"
@@ -82,8 +85,11 @@ diff a/index.js b/index.js	(rejected hunks)
 + app.get('/profiel', (req, res) => {
 +     res.render('profiel');
 +     });
++app.get('/detail', (req, res) => {
++    res.render('detail');
++    });
 + });
-+ 
-+ 
++
++
 + app.listen(3000);
 ++>>>>>>> initial commit;

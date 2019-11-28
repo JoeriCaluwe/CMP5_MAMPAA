@@ -1,0 +1,18 @@
+<% include header %>
+
+<a class=mapmenu href="/parken" id="parken">Terug naar alle parken</a>
+
+  <h1><%=park.naam%></h1>
+
+
+    <p class="titel">Adres: </p>
+      <p class="adres"><%=park.attributes.straat%> <%=park.attributes.huisnummer%></p>
+      <p class="adres2"><%=park.attributes.postcode%> <%=park.attributes.district%></p>
+
+    <p class="titel">Toestellen: </p>
+      <p class="toestellen"><%=park.attributes.toestellen%></p>
+
+    <p class="titel">Opmerking: </p>
+      <p class="opmerking"><%=park.attributes.opmerking%></p>
+
+      <img class="detailfoto" src="<%=park.foto1 %>" alt="foto <%=park.naam %>">
