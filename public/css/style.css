@@ -76,16 +76,6 @@ p {
   font-size: 30pt;
 }
 
-button {
-  background-color: #AFEEEE;
-  border: 3px solid #FFFFFF;
-  border-radius: 10px;
-  display: block;
-  margin: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
 .mapmenu2 {
   display: flex;
   align-items: center;
@@ -106,6 +96,16 @@ a {
   text-align:left;
 }
 
+button#RegisterLogin {
+  background-color: #AFEEEE;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  display: block;
+  margin:auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 
 /*-----------leaflet menu------------*/
 
@@ -121,6 +121,14 @@ img#hamburger {
       color: black;
       padding-left: 1rem;
       padding-right: 1rem;
+}
+
+button#FilterMap {
+  background-color: #AFEEEE;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  display: inline;
+  margin-top: 20px;
 }
 
 ul {
@@ -149,29 +157,9 @@ li {
   opacity: 1;
 }
 
-
-button#isotope1 {
-  position: absolute;
-  display:inline;
-  text-align:center;
-  width:20%;
-  left:30vw;
-  top:0.5vh;
-}
-button#isotope2 {
-  position: absolute;
-  display:inline;
-  text-align:center;
-  width:20%;
-  right:30vw;
-  top:0.5vh;
-}
-
 .filter {
   opacity:0;
-  position: absolute;
-  display:block;
-  text-align:center;
+  position:absolute;
   width:100%;
   top:0.5vh;
 }
@@ -200,9 +188,11 @@ button#isotope2 {
   background: #AFEEEE;
   overflow-y: scroll;
   border-radius: 2px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:15pt;
 }
 .message {
-  padding: 10px;
+  padding: 20px;
   animation:fade 0.25s;
   border-bottom:1px solid rgba(0, 0, 0, 0.1);
 }
@@ -211,13 +201,28 @@ button#isotope2 {
   margin-left:auto;
   margin-right:auto;
   height:7.5vh;
-  width:98.5vw;
+  width:95vw;
+  border:none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding-left:5vw;
+  font-size: 20pt;
+
 }
 .btn {
   height: 7.5vh;
   line-height: 40px;
-  width: 20vw;
+  width: 40vw;
   text-align: center;
-  background: white;
-  cursor:pointer;
+  display:block;
+  margin:auto;
+  margin-top:10px;
+  background-color: #AFEEEE;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight:bold;
+  color:#5F9EA0;
+  font-size:15pt;
 }
