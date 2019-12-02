@@ -226,3 +226,41 @@ li {
   color:#5F9EA0;
   font-size:15pt;
 }
+
+/*------------------lost--------------------*/
+
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 30pt;
+  color:#5F9EA0;
+  margin-top:30px;
+  margin-bottom:30px;
+  font-weight:bold;
+}
+
+#lostexp {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:20pt;
+  line-height:40px;
+}
+
+input#btnShowMsg {
+  height: 7.5vh;
+  line-height: 40px;
+  width: 40vw;
+  text-align: center;
+  display:block;
+  margin:auto;
+  margin-top:10px;
+  background-color: #AFEEEE;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight:bold;
+  color:#5F9EA0;
+  font-size:25pt;
+}
+
+center {
+  margin-top:20vh;
+}
