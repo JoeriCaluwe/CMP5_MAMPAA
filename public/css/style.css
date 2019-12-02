@@ -229,7 +229,7 @@ li {
 
 /*------------------lost--------------------*/
 
-h1 {
+h1#titellost {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 30pt;
   color:#5F9EA0;
@@ -263,4 +263,19 @@ input#btnShowMsg {
 
 center {
   margin-top:20vh;
+}
+
+/*------------------contact---------------------*/
+
+#contacteerons, #infobedrijf {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:20pt;
+  line-height:40px;
+  text-align:center;
+}
+
+#infobedrijf {
+  padding-bottom:20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
