@@ -5,7 +5,7 @@
   <h1>Overzicht parken</h1>
 
 <!--  aanpassing om lijst parken te tonen-->
-  <div>
+  <div class="grid-container">
     <% for(var i=0; i < parken.length; i++) {%>
       <a href="/detail/<%=i%>">
       <h3><%=parken[i].attributes.naam%></h3>

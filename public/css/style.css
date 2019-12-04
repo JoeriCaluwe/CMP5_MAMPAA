@@ -279,3 +279,20 @@ center {
   margin-bottom: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+/*------------------parken---------------------*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-gap: 10px;
+  justify-content: center;
+
+}
+
+.grid-container a{
+  font-size: 10pt;
+  width: 80px;
+  border: 2px solid green;
+  padding: 10px;
+  background-color: white;
+}
