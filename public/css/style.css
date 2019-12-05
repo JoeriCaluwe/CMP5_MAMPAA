@@ -1,7 +1,7 @@
 /*-------------------------------body------------------------------*/
 body {
   background-color: #FFF5EE;
-  height:100vh;
+  height:100%;
 }
 /*-------------------------------Login-----------------------------*/
 
@@ -14,7 +14,7 @@ body {
 
 #mapje {
   width: 100vw;
-  height: 70vh;
+  height: 90vh;
   border-top: 3px solid #FFFFFF;
   border-bottom: 5px solid #FFFFFF;
 }
