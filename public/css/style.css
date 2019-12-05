@@ -14,7 +14,7 @@ body {
 
 #mapje {
   width: 100vw;
-  height: 90vh;
+  height: 70vh;
   border-top: 3px solid #FFFFFF;
   border-bottom: 5px solid #FFFFFF;
 }
@@ -43,10 +43,6 @@ body {
 .mapmenu {
   margin: 20px;
   margin-bottom: 20px;
-}
-
-#parken {
-  background-color: #AFEEEE;
 }
 
 p {
