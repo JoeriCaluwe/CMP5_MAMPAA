@@ -286,6 +286,21 @@ center {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+#info p {
+  font-size: 7pt;
+  line-height: 7pt;
+  width: 80vw;
+margin-left: auto;
+margin-right: auto;
+}
+
+#info h2 {
+  display: block;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*------------------parken---------------------*/
 .grid-container {
   display: grid;
