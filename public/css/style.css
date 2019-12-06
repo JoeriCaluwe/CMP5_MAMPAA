@@ -11,6 +11,11 @@ body {
 
 /*-------------------------------Leaflet-----------------------------*/
 
+.mapmenu1 {
+  position: fixed;
+  margin: 20px;
+  margin-bottom: 20px;
+}
 
 #mapje {
   width: 100vw;
@@ -50,9 +55,39 @@ body {
   margin-bottom: 20px;
 }
 
+ .titel, .adres, .adres2, .toestellen, .opmerking {
+   text-align: center;
+ }
+
+.adres, .adres2, .toestellen, .opmerking {
+  margin-bottom: 10px;
+}
+
+ .titel {
+   color: #5F9EA0;
+   margin-bottom: 10px;
+   font-family: 'Open Sans Condensed', sans-serif;
+ }
+
 p {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 20px;
+}
+
+.detailfoto {
+  width: 90%;
+  display: block;
+  margin: auto;
+  border: 3px solid #5F9EA0;
+  border-radius: 10px;
+}
+
+.parken {
+  font-size: 20pt;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .LogIn {
