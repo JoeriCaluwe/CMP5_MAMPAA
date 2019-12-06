@@ -5,13 +5,13 @@ var basicmap = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png
 	id: 'mapbox.streets'
 });
 var myLocationPin = L.icon({
-	iconUrl: 'css/images/mama.png',
-    shadowUrl: 'css/images/mama.png',
+	iconUrl: 'css/images/ouders.png',
+    shadowUrl: 'css/images/schaduw.png',
 
-    iconSize:     [38, 95], // size of the icon
-    shadowSize:   [50, 64], // size of the shadow
+    iconSize:     [95, 95], // size of the icon
+    shadowSize:   [95, 95], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-    shadowAnchor: [4, 62],  // the same for the shadow
+    shadowAnchor: [22, 94],  // the same for the shadow
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
 function onLocationFound(e) {
