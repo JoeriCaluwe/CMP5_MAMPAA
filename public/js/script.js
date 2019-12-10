@@ -16,7 +16,7 @@ var myLocationPin = L.icon({
 });
 function onLocationFound(e) {
 var radius = e.accuracy / 2;
-L.marker(e.latlng,{icon:myLocationPin}).addTo(mymap) .bindPopup("You are Here").openPopup();
+L.marker(e.latlng,{icon:myLocationPin}).addTo(mymap) .bindPopup("Jij bent hier").openPopup();
 L.circle(e.latlng, radius).addTo(mymap);
 }
 mymap.on('locationfound', onLocationFound);

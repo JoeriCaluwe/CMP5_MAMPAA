@@ -310,30 +310,36 @@ center {
 
 #contacteerons, #infobedrijf {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size:20pt;
+  font-size:15pt;
   line-height:40px;
   text-align:center;
 }
 
 #infobedrijf {
+  font-size:15pt;
   padding-bottom:20px;
   margin-bottom: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #info p {
-  font-size: 7pt;
-  line-height: 7pt;
+  font-size: 16pt;
+  line-height: 20pt;
   width: 80vw;
 margin-left: auto;
 margin-right: auto;
+padding-bottom: 40px;
+padding-top: 10px;
 }
 
 #info h2 {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: underline;
+  color: #5F9EA0;
+  font-size: 15pt;
   display: block;
-  width: 80vw;
-  margin-left: auto;
-  margin-right: auto;
+  
+  text-align:center;
 }
 
 /*------------------parken---------------------*/
